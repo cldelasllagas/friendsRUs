@@ -1,0 +1,49 @@
+** deleted from register.php
+        
+<script language = "Javascript">
+  
+function Validate()
+{
+    if (document.registration_form.fname.value == '') 
+    {
+        alert('Please fill in your first name!');
+        return false;
+    }
+    if (document.registration_form.lname.value == '') 
+    {
+       alert('Please fill in your last name!');
+       return false;
+    }
+    if (document.registration_form.username.value == '') 
+    {
+        alert('Please fill in your desired username!');
+        return false;
+    }
+    if (document.registration_form.password.value == '') 
+    {
+       alert('Please fill in your desired password!');
+      return false;
+    }
+    if (document.registration_form.cpassword.value == '') 
+    {
+       alert('Please fill in your password again for confirmation!');
+      return false;
+    }
+    if (document.registration_form.password.value != 
+    document.registration_form.cpassword.value) 
+    {
+        alert("The two passwords are not identical! "+
+        "Please enter the same password again for confirmation");
+        return false;
+    }
+    if (document.registration_form.phone_number.value == '') 
+    {
+        alert('Please fill in your phone number!');
+        return false;
+    }
+    return true;
+}
+</script>
+
+	
+	
